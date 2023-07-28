@@ -13,6 +13,7 @@ import com.tyaari.dto.ChatGptResponse;
 
 @RestController
 @RequestMapping("/bot")
+@CrossOrigin("*")
 public class CustomBotController {
 
     @Value("${openai.model}")
